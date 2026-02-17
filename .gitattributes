@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+data/raw/*.csv
+outputs/*.csv
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
