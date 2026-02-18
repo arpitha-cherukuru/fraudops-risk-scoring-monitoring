@@ -87,8 +87,7 @@ Optimises:
 - Review threshold  
 - Decline threshold  
 
-Objective:  
-Minimise total operational cost:
+Objective:
 
 Total Cost = Missed Fraud Loss + Review Cost + False Decline Cost
 
@@ -189,8 +188,17 @@ Dashboard screenshots are available in the `assets/` folder.
 
 ## How to Run
 
-From project root:
+### Install Dependencies
 
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Full Pipeline
+
+From the project root directory:
+
+```bash
 python src/01_make_dataset.py
 python src/02_preprocess.py
 python src/03_train_model.py
@@ -199,7 +207,7 @@ python src/05_apply_decisions.py
 python src/06_case_queue.py
 python src/07_drift_monitor.py
 python src/08_model_explainability.py
-
+```
 
 ---
 
